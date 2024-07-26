@@ -3510,3 +3510,41 @@ input, select, textarea {
 			}
 
 	}
+
+
+
+
+	.major-icons li {
+		position: relative; /* Make li relative for absolute positioning of hidden text */
+		transition: transform 0.3s;
+		text-align: center; /* Center align the text */
+	}
+	
+	.hidden-text {
+		display: none; /* Hide the text by default */
+		position: absolute; /* Position it over the icon */
+		top: 50%; /* Center it vertically */
+		left: 50%; /* Center it horizontally */
+		transform: translate(-50%, -50%); /* Center it */
+		background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+		color: #fff; /* Text color */
+		padding: 5px; /* Padding for better appearance */
+		border-radius: 5px; /* Rounded corners */
+		font-size: 0.9em; /* Font size */
+		white-space: nowrap; /* Prevent line breaks */
+		z-index: 1; /* Ensure it appears above other elements */
+	}
+	
+	.major-icons li:hover {
+		transform: scale(1.2); /* Enlarge on hover */
+	}
+	
+	.major-icons li:hover .hidden-text {
+		display: block; /* Show the hidden text on hover */
+	}
+	
+	.tab {
+        padding-left: 40px; /* Adjust this value for desired spacing */
+    }
+
+	
